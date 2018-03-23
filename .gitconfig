@@ -1,0 +1,122 @@
+[color]
+    ui = auto
+[user]
+    name = Emmanuel LONGEAU
+    email = external.z12elong@decathlon.com
+[http]
+   ; proxy = http://gateway.zscaler.net:80
+[https]
+   ; proxy = http://gateway.zscaler.net:443
+[core]
+    editor = nvim
+    whitespace = trailing-space,space-before-tab
+    trustctime = false
+    filemode = false
+    pager = diff-so-fancy | less --tabs=4 -RFX
+    autocrlf = input
+[pager]
+  # " = true" means use pager defined in [core]
+    diff     = true
+    difftool = true
+    log      = true
+    show     = true
+[diff]
+    wordRegex = .
+    renames = copies
+    mnemonicprefix = true
+    tool = vimdiff
+    renameLimit = 1000
+[status]
+    showUntrackedFiles = all
+[color]
+    ui = auto
+[color "branch"]
+    current = yellow bold
+    local = green bold
+    remote = cyan bold
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = red bold
+[branch]
+    autosetupmerge = true
+[push]
+    default = current
+[difftool]
+    prompt = false
+[credential]
+    helper = cache --timeout=3600
+[merge]
+    tool = vimdiff
+[mergetool]
+    keeptemporaries = false
+    keepbackups = false
+    prompt = false
+    trustexitcode = false
+[alias]
+    last = log -1 --stat
+    cp = cherry-pick
+    co = checkout
+    cl = clone
+    ci = commit
+    st = status -sb
+    br = branch
+    unstage = reset HEAD --
+    dc = diff --ignore-all-space --cached
+    lg = log --pretty=format:'%Cred%h%Creset %C(bold blue)%<(15,trunc)%an%Creset %<(60,trunc)%s %Cgreen(%ci)%C(yellow)%d%Creset' --abbrev-commit
+    lgm = !git lg origin/master..
+    gitadd = !sh -c 'git add -- "$@" && git status -sb' --
+    lgd = log --graph --pretty=format:'%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n          %C(yellow)%d%Creset' --abbrev-commit origin/develop..
+    cb = checkout -b
+    cbo = "! f() { echo 'Fetch'; git fetch; git checkout -b \"$1\" origin/master; }; f"
+    ap = add --patch
+    sf = diff --name-only origin/develop...
+    stash = stash -u
+    save = stash
+    pop = stash pop
+    fp = !git fetch && git pull
+    dd = diff --ignore-all-space origin/develop
+    d = diff --ignore-all-space
+    dm = !git d origin/master...
+    dw = diff --ignore-all-space --color-words
+    a = add
+    undo = reset --soft HEAD^
+    recall = !g recall
+    same = !git commit --amend --no-edit
+    rod = rebase origin/develop
+    changes = diff --name-status --stat
+    pl = pull
+    ph = push
+    f = fetch
+    pp = !git pull && git push
+    ri = rebase -i --autosquash
+    mri = rebase -i
+    fix = commit --fixup
+    fx = !HASH=`git log --pretty=oneline | grep -v "fixup!" | head -20 | fzf` && git commit --fixup `echo ${HASH} | awk '{ print $1 }'`
+    cf = !"BRANCH=`git branch -a | grep -v '^*' | fzf ` && git checkout `echo $BRANCH | awk '{ $1=$1 };1' | sed -E 's/remotes\\/origin\\///g'`"
+    squ = commit --squash
+    rc = !"git rebase --continue ; git st"
+    rs = !"git rebase --skip ; git st"
+    ra = rebase --abort
+    irb=!"git branch | grep -v '^*' | ipt -m | xargs git branch -D"
+[branch "master"]
+    mergeoptions = --no-ff
+[pull]
+    rebase = true
+[fetch]
+    prune = true
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
+[rerere]
+	enabled = true
+[gc]
+	auto = 1000
