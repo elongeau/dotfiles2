@@ -1,5 +1,5 @@
 source ~/.profile
-# export PATH="$PATH:/usr/local/bin:~/.local/bin/stack:/Users/Emmanuel/.local/bin:$(which node)"
+export PATH="$PATH:/usr/local/bin:~/.local/bin/stack:/Users/Emmanuel/.local/bin:$(which node)"
 # export ALL_PROXY=gateway.zscaler.net:80
 # export HTTP_PROXY=gateway.zscaler.net:80
 # export HTTPS_PROXY=gateway.zscaler.net:443
