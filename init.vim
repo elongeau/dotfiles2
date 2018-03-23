@@ -38,7 +38,8 @@ Plug 'parsonsmatt/intero-neovim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins', 'for': 'haskell'  }
 Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
 Plug 'w0rp/ale', { 'for': 'haskell' }
-Plug 'alx741/vim-hindent'
+" Plug 'alx741/vim-hindent'
+Plug 'sbdchd/neoformat'
 
 " Initialize plugin system
 call plug#end()
@@ -200,38 +201,32 @@ augroup interoMaps
 augroup END
 
 
-" ----- w0rp/ale -----
-
-let g:ale_linters.haskell = ['stack-ghc-mod', 'hlint']
-
-" ----- neovimhaskell/haskell-vim -----
-
 
 " ----- hindent & stylish-haskell -----
 
 " Indenting on save is too aggressive for me
-let g:hindent_on_save = 1
+" let g:hindent_on_save = 1
 
-" Helper function, called below with mappings
-function! HaskellFormat(which) abort
-  if a:which ==# 'hindent' || a:which ==# 'both'
-    :Hindent
-  endif
-  if a:which ==# 'stylish' || a:which ==# 'both'
-    silent! exe 'undojoin'
-    silent! exe 'keepjumps %!stylish-haskell'
-  endif
-endfunction
+" " Helper function, called below with mappings
+" function! HaskellFormat(which) abort
+"   if a:which ==# 'hindent' || a:which ==# 'both'
+"     :Hindent
+"   endif
+"   if a:which ==# 'stylish' || a:which ==# 'both'
+"     silent! exe 'undojoin'
+"     silent! exe 'keepjumps %!stylish-haskell'
+"   endif
+" endfunction
 
-" Key bindings
+" " Key bindings
 augroup haskellStylish
   au!
-  " Just hindent
-  au FileType haskell nnoremap <leader>hi :Hindent<CR>
-  " Just stylish-haskell
-  au FileType haskell nnoremap <leader>hs :call HaskellFormat('stylish')<CR>
-  " First hindent, then stylish-haskell
-  au FileType haskell nnoremap <leader>hf :call HaskellFormat('both')<CR>
+ " " Just hindent
+  " au FileType haskell nnoremap <leader>hi :Hindent<CR>
+  " " Just stylish-haskell
+  " au FileType haskell nnoremap <leader>hs :call HaskellFormat('stylish')<CR>
+  " " First hindent, then stylish-haskell
+  " au FileType haskell nnoremap <leader>hf :call HaskellFormat('both')<CR>
 
   au FileType haskell map <silent> <leader>t <Plug>InteroGenericType
   au FileType haskell map <silent> <leader>T <Plug>InteroType
@@ -271,3 +266,17 @@ let g:haskell_tabular = 1
 vmap a= :Tabularize /=<CR>
 vmap a; :Tabularize /::<CR>
 vmap a- :Tabularize /-><CR>
+let g:neoformat_python_brittany = {
+            \ 'exe': 'brittany',
+            \ 'args': ['--write-mode=inplace'],
+            \ 'replace': 1,
+            \ 'stdin': 1, 
+            \ 'env': ["DEBUG=1"], 
+            \ 'valid_exit_codes': [0, 23],
+            \ 'no_append': 1
+            \ }
+let g:neoformat_enabled_haskell = ['brittany']
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * undojoin | Neoformat
+augroup END
