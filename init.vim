@@ -1,4 +1,5 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
+au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 let &packpath = &runtimepath
 source ~/.vimrc
 
