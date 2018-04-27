@@ -126,4 +126,5 @@ alias rm='echo "Use trash-put either"; false'
 # Keep at end
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+eval $(thefuck --alias)
 eval "$(direnv hook zsh)"
