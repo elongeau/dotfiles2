@@ -1,5 +1,5 @@
 source ~/.profile
-export PATH="$PATH:/usr/local/bin:~/.local/bin/stack:/Users/Emmanuel/.local/bin:$(which node)"
+export PATH="$PATH:/usr/local/bin:~/.local/bin/stack:$HOME/.local/bin:$(which node)"
 # export ALL_PROXY=gateway.zscaler.net:80
 # export HTTP_PROXY=gateway.zscaler.net:80
 # export HTTPS_PROXY=gateway.zscaler.net:443
@@ -115,8 +115,8 @@ alias cask="brew cask"
 alias c="code"
 alias ghci='stack ghci --ghci-options "-interactive-print=Text.Pretty.Simple.pPrint" --package pretty-simple'
 
-export PATH="$PATH:/Users/Emmanuel/.rvm/gems/ruby-2.4.0/bin"
-alias stack="/Users/Emmanuel/.local/bin/stack"
+export PATH="$PATH:$HOME/.rvm/gems/ruby-2.4.0/bin"
+alias stack="$HOME/.local/bin/stack"
 
 alias vim="nvim"
 alias rtc="cat ~/.rtc | pbcopy"
