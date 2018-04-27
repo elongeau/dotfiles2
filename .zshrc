@@ -23,8 +23,6 @@ if [[ $os -eq "Darwin" ]]; then
   antigen apply
 else
   
-  source ~/.localconfrc
-  alias sync-time='sudo /usr/sbin/VBoxService --timesync-set-start > /dev/null'
   source ~/tools/z/z.sh
   source ~/tools/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 fi
@@ -36,21 +34,6 @@ __git_files () {
 
 eval "$(ssh-agent -s)" > /dev/null && ssh-add > /dev/null
 
-function setTask() {
-echo "Task $1 : " > /opt/dev/jazzws/CUBE-Dev/.git/.gitmessage
-}
-function setDefect() {
-echo "Defect $1 : " > /opt/dev/jazzws/CUBE-Dev/.git/.gitmessage
-}
-
-alias setTask="setTask"
-alias setDefect="setDefect"
-
-alias ant='cant'
-function cant {
-"ant" -logger org.apache.tools.ant.listener.AnsiColorLogger "$@" \
-    2>&1 | perl -pe 's/(?<=\e\[)2;//g'
-}
 alias d="docker"
 
 alias weather="curl http://wttr.in/Lille | less"
@@ -77,7 +60,6 @@ export PATH="/usr/local/bin:$PATH"
 
 alias bubu="brew update && brew upgrade && brew cleanup -s && brew cask cleanup"
 alias brdoc="brew doctor && brew missing"
-export NO_PROXY=",*.cube-net.org,localhost,*.cube.ntt.preprod.org"
 alias cask="brew cask"
 alias c="code"
 alias ghci='stack ghci --ghci-options "-interactive-print=Text.Pretty.Simple.pPrint" --package pretty-simple'
@@ -86,7 +68,6 @@ export PATH="$PATH:$HOME/.rvm/gems/ruby-2.4.0/bin"
 alias stack="$HOME/.local/bin/stack"
 
 alias vim="nvim"
-alias rtc="cat ~/.rtc | pbcopy"
 alias y="yarn"
 alias rm='echo "Use trash-put either"; false'
 
