@@ -33,7 +33,7 @@ Plug 'godlygeek/tabular'
 Plug 'vimlab/split-term.vim'
 
 " Haskell
-Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
+" Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 Plug 'dag/vim2hs', { 'for': 'haskell' }
 " Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
 Plug 'parsonsmatt/intero-neovim'
@@ -200,47 +200,11 @@ augroup interoMaps
   au FileType haskell map <leader>T <Plug>InteroType
   au FileType haskell nnoremap <silent> <leader>it :InteroTypeInsert<CR>
 
-  au FileType haskell nnoremap <silent> <leader>jd :InteroGoToDef<CR>
   au FileType haskell nnoremap <silent> <leader>iu :InteroUses<CR>
   au FileType haskell nnoremap <leader>ist :InteroSetTargets<SPACE>
-augroup END
-
-
-
-" ----- hindent & stylish-haskell -----
-
-" Indenting on save is too aggressive for me
-" let g:hindent_on_save = 1
-
-" " Helper function, called below with mappings
-" function! HaskellFormat(which) abort
-"   if a:which ==# 'hindent' || a:which ==# 'both'
-"     :Hindent
-"   endif
-"   if a:which ==# 'stylish' || a:which ==# 'both'
-"     silent! exe 'undojoin'
-"     silent! exe 'keepjumps %!stylish-haskell'
-"   endif
-" endfunction
-
-" " Key bindings
-augroup haskellStylish
-  au!
- " " Just hindent
-  " au FileType haskell nnoremap <leader>hi :Hindent<CR>
-  " " Just stylish-haskell
-  " au FileType haskell nnoremap <leader>hs :call HaskellFormat('stylish')<CR>
-  " " First hindent, then stylish-haskell
-  " au FileType haskell nnoremap <leader>hf :call HaskellFormat('both')<CR>
 
   au FileType haskell map <silent> <leader>t <Plug>InteroGenericType
   au FileType haskell map <silent> <leader>T <Plug>InteroType
-
-  " Open intero/GHCi split horizontally
-  au FileType haskell nnoremap <silent> <leader>io :InteroOpen<CR>
-  " Open intero/GHCi split vertically
-  au FileType haskell nnoremap <silent> <leader>iov :InteroOpen<CR><C-W>H
-  au FileType haskell nnoremap <silent> <leader>ih :InteroHide<CR>
 
   au FileType haskell nnoremap <silent> <leader>df :InteroGoToDef<CR>
 
@@ -263,28 +227,20 @@ nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
 
-set mouse=a mousemodel=popup
-
 " Tabular 
 let g:haskell_tabular = 1
 
 vmap a= :Tabularize /=<CR>
 vmap a; :Tabularize /::<CR>
 vmap a- :Tabularize /-><CR>
-let g:neoformat_python_brittany = {
-            \ 'exe': 'brittany',
-            \ 'args': ['--write-mode=inplace'],
-            \ 'replace': 1,
-            \ 'stdin': 1, 
-            \ 'env': ["DEBUG=1"], 
-            \ 'valid_exit_codes': [0, 23],
-            \ 'no_append': 1
-            \ }
-let g:neoformat_enabled_haskell = ['brittany']
-augroup fmt
-  autocmd!
-  autocmd BufWritePre * undojoin | Neoformat
-augroup END
+
+" Neoformat
+nnoremap <A-f> :Neoformat<CR>
+inoremap <A-f> :Neoformat<CR>
+" augroup fmt
+"   autocmd!
+"   autocmd BufWritePre * undojoin | Neoformat
+" augroup END
 
 " Terminal
 set splitright
