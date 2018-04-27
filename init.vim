@@ -30,6 +30,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'asciidoc/vim-asciidoc'
 Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
+Plug 'vimlab/split-term.vim'
 
 " Haskell
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
@@ -284,3 +285,10 @@ augroup fmt
   autocmd!
   autocmd BufWritePre * undojoin | Neoformat
 augroup END
+
+" Terminal
+set splitright
+set splitbelow
+nnoremap <leader>st :50VTerm stack build --exec "./run.sh" --fast --file-watch<CR>
+au BufEnter * if &buftype == 'terminal' | :startinsert | endif
+let g:disable_key_mappings = 1
