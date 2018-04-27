@@ -74,7 +74,7 @@
     gitadd = !sh -c 'git add -- "$@" && git status -sb' --
     lgd = log --graph --pretty=format:'%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n          %C(yellow)%d%Creset' --abbrev-commit origin/develop..
     cb = checkout -b
-    cbo = "! f() { echo 'Fetch'; git fetch; git checkout -b \"$1\" origin/master; }; f"
+    cbm = "! f() { echo 'Fetch'; git fetch; git checkout -b \"$1\" origin/master; }; f"
     ap = add --patch
     sf = diff --name-only origin/develop...
     stash = stash -u
@@ -98,13 +98,15 @@
     ri = rebase -i --autosquash
     mri = rebase -i
     fix = commit --fixup
-    fx = !HASH=`git log --pretty=oneline | grep -v "fixup!" | head -20 | fzf` && git commit --fixup `echo ${HASH} | awk '{ print $1 }'`
+    fx = !HASH=`git log --pretty=oneline origin/master.. | grep -v "fixup!" | head -20 | fzf` && git commit --fixup `echo ${HASH} | awk '{ print $1 }'`
     cf = !"BRANCH=`git branch -a | grep -v '^*' | fzf ` && git checkout `echo $BRANCH | awk '{ $1=$1 };1' | sed -E 's/remotes\\/origin\\///g'`"
     squ = commit --squash
     rc = !"git rebase --continue ; git st"
     rs = !"git rebase --skip ; git st"
     ra = rebase --abort
     irb=!"git branch | grep -v '^*' | ipt -m | xargs git branch -D"
+  rim= rebase -i --autosquash origin/master
+	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
 [branch "master"]
     mergeoptions = --no-ff
 [pull]
