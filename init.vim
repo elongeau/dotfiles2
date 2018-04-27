@@ -20,6 +20,7 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
@@ -39,15 +40,16 @@ Plug 'parsonsmatt/intero-neovim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins', 'for': 'haskell'  }
 Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
 Plug 'w0rp/ale', { 'for': 'haskell' }
-" Plug 'alx741/vim-hindent'
 Plug 'sbdchd/neoformat'
+Plug 'travitch/hasksyn'
+Plug 'ndmitchell/ghcid', { 'rtp': 'plugins/nvim' }
 
 " Initialize plugin system
 call plug#end()
 
 set wrap linebreak nolist
 set nofoldenable
-set background=dark
+set background=light
 colorscheme solarized
 
 " ======= Motion
@@ -96,9 +98,9 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:ale_linters = {
 \   'haskell': ['hlint','ghc-mod'],
 \}
-highlight SignColumn ctermbg=black
+highlight SignColumn ctermbg=yellow
 highlight ALEErrorSign ctermfg=red
-highlight ALEWarningSign ctermfg=darkyellow
+highlight ALEWarningSign ctermfg=yellow
 let g:ale_sign_error = '✘'
 let g:ale_sign_warning = '▵'
 
@@ -174,6 +176,7 @@ let g:airline_powerline_fonts = 1
 "powerline symbols
 let g:Powerline_symbols="fancy"
 let g:airline_section_z = ' %l / %L : %c '
+let g:airline_theme='solarized'
 
 " Intero
 " Use ALE (works even when not using Intero)
