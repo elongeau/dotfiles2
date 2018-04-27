@@ -24,3 +24,5 @@ nnoremap à 0
 nnoremap wq :wq<CR>
 nnoremap <leader>w :w<CR>
 inoremap <C-s> <ESC>:w<CR>i
+
+" I'm using neovim so check init.vim too ;-)
