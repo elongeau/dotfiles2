@@ -248,3 +248,5 @@ set splitbelow
 nnoremap <leader>st :50VTerm stack build --exec "./run.sh" --fast --file-watch<CR>
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 let g:disable_key_mappings = 1
+
+set clipboard=unnamedplus
