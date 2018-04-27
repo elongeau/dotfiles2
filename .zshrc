@@ -121,6 +121,7 @@ alias stack="$HOME/.local/bin/stack"
 alias vim="nvim"
 alias rtc="cat ~/.rtc | pbcopy"
 alias y="yarn"
+alias rm='echo "Use trash-put either"; false'
 
 # Keep at end
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
