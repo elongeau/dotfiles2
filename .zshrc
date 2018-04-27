@@ -1,40 +1,7 @@
 source ~/.profile
 export PATH="$PATH:/usr/local/bin:~/.local/bin/stack:$HOME/.local/bin:$(which node)"
-# export ALL_PROXY=gateway.zscaler.net:80
-# export HTTP_PROXY=gateway.zscaler.net:80
-# export HTTPS_PROXY=gateway.zscaler.net:443
-# export http_proxy=$HTTP_PROXY
-# export https_proxy=$HTTPS_PROXY
-# # Docker proxy
-# export no_proxy='localhost, 127.0.0.1, .cube-net.org'
-# export NO_PROXY=$no_proxy
 
-setProxy(){
-    export all_proxy=socks://gateway.zscaler.net:80
-    export http_proxy=http://gateway.zscaler.net:80
-    export https_proxy=$http_proxy
-    export ftp_proxy=$http_proxy
-    export ALL_PROXY=$all_proxy
-    export HTTP_PROXY=$http_proxy
-    export HTTPS_PROXY=$http_proxy
-    export FTP_PROXY=$http_proxy
-    export no_proxy="localhost, 127.0.0.1, .cube-net.org"
-    export NO_PROXY=$no_proxy
-}
-
-unsetProxy(){
-   PROXY_ENV=( \
-      "http_proxy" "ftp_proxy" "https_proxy" "all_proxy" \
-      "HTTP_PROXY" "HTTPS_PROXY" "FTP_PROXY" "ALL_PROXY" \
-      "NO_PROXY"\
-   )
-    for envar in ${PROXY_ENV[@]}
-    do
-       unset $envar
-    done
-}
-
-setProxy
+source $HOME/custom.sh
 
 os="$(uname -s)"
 
