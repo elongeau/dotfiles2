@@ -69,7 +69,7 @@
     br = branch
     unstage = reset HEAD --
     dc = diff --ignore-all-space --cached
-    lg = log --pretty=format:'%Cred%h%Creset %C(bold blue)%<(15,trunc)%an%Creset %<(60,trunc)%s %Cgreen(%ci)%C(yellow)%d%Creset' --abbrev-commit
+    lg = log --pretty=format:'%Cred%h%Creset %C(bold blue)%<(15,trunc)%an%Creset %<(90,trunc)%s %Cgreen(%ci)%C(yellow)%d%Creset' --abbrev-commit
     lgm = !git lg origin/master..
     gitadd = !sh -c 'git add -- "$@" && git status -sb' --
     lgd = log --graph --pretty=format:'%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n          %C(yellow)%d%Creset' --abbrev-commit origin/develop..
@@ -107,6 +107,7 @@
     irb=!"git branch | grep -v '^*' | ipt -m | xargs git branch -D"
   rim= rebase -i --autosquash origin/master
 	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
+  resolve = "!git diff --name-only --diff-filter=U | xargs code"
 [branch "master"]
     mergeoptions = --no-ff
 [pull]
