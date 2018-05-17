@@ -38,7 +38,6 @@ Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 Plug 'itchyny/vim-haskell-indent'
 Plug 'dag/vim2hs', { 'for': 'haskell' }
 " Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
-Plug 'parsonsmatt/intero-neovim'
 " Plug 'neomake/neomake'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins', 'for': 'haskell'  }
 Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
@@ -184,44 +183,6 @@ let g:airline_powerline_fonts = 1
 let g:Powerline_symbols="fancy"
 let g:airline_section_z = ' %l / %L : %c '
 let g:airline_theme='solarized'
-
-" Intero
-" Use ALE (works even when not using Intero)
-let g:intero_use_neomake = 0
-
-augroup interoMaps
-  au!
-
-  au FileType haskell nnoremap <silent> <leader>io :InteroOpen<CR>
-  au FileType haskell nnoremap <silent> <leader>iov :InteroOpen<CR><C-W>H
-  au FileType haskell nnoremap <silent> <leader>ih :InteroHide<CR>
-  au FileType haskell nnoremap <silent> <leader>is :InteroStart<CR>
-  au FileType haskell nnoremap <silent> <leader>ik :InteroKill<CR>
-
-  au FileType haskell nnoremap <silent> <leader>wr :w \| :InteroReload<CR>
-  au FileType haskell nnoremap <silent> <leader>il :InteroLoadCurrentModule<CR>
-  au FileType haskell nnoremap <silent> <leader>if :InteroLoadCurrentFile<CR>
-
-  au FileType haskell map <leader>t <Plug>InteroGenericType
-  au FileType haskell map <leader>T <Plug>InteroType
-  au FileType haskell nnoremap <silent> <leader>it :InteroTypeInsert<CR>
-
-  au FileType haskell nnoremap <silent> <leader>iu :InteroUses<CR>
-  au FileType haskell nnoremap <leader>ist :InteroSetTargets<SPACE>
-
-  au FileType haskell map <silent> <leader>t <Plug>InteroGenericType
-  au FileType haskell map <silent> <leader>T <Plug>InteroType
-
-  au FileType haskell nnoremap <silent> <leader>df :InteroGoToDef<CR>
-
-  au FileType haskell nnoremap <silent> <leader>it :InteroTypeInsert<CR>
-
-  au BufWritePost *.hs InteroReload
-
-  au FileType haskell nnoremap <silent> <leader>jd :InteroGoToDef<CR>
-augroup END
-
-let g:intero_prompt_regex = 'λ ❯ '
 
 " Alt-{hjkl} for navigating panes
 tnoremap <A-h> <C-\><C-n><C-w>h
