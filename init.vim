@@ -35,6 +35,7 @@ Plug 'vimlab/split-term.vim'
 
 " Haskell
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
+Plug 'itchyny/vim-haskell-indent'
 Plug 'dag/vim2hs', { 'for': 'haskell' }
 " Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
 Plug 'parsonsmatt/intero-neovim'
@@ -242,10 +243,10 @@ vmap a- :Tabularize /-><CR>
 " Neoformat
 nnoremap <A-f> :Neoformat<CR>
 inoremap <A-f> :Neoformat<CR>
-" augroup fmt
-"   autocmd!
-"   autocmd BufWritePre * undojoin | Neoformat
-" augroup END
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * undojoin | Neoformat
+augroup END
 
 " Terminal
 set splitright
