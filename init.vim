@@ -34,7 +34,7 @@ Plug 'godlygeek/tabular'
 Plug 'vimlab/split-term.vim'
 
 " Haskell
-" Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
+Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 Plug 'dag/vim2hs', { 'for': 'haskell' }
 " Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
 Plug 'parsonsmatt/intero-neovim'
