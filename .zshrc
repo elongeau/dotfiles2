@@ -72,6 +72,7 @@ alias y="yarn"
 alias rm='echo "Use trash-put either"; false'
 alias trash='trash-put'
 alias ls='exa'
+alias la='ls -la'
 
 # Keep at end
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
