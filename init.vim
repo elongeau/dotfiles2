@@ -1,6 +1,7 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 source ~/.vimrc
+set termguicolors
 
 if !has('nvim')
     set ttymouse=xterm2
@@ -18,6 +19,7 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
 Plug 'altercation/vim-colors-solarized'
+Plug 'lifepillar/vim-solarized8'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
@@ -50,7 +52,7 @@ call plug#end()
 set wrap linebreak nolist
 set nofoldenable
 set background=light
-colorscheme solarized
+colorscheme solarized8
 
 " ======= Motion
 nnoremap j gj
