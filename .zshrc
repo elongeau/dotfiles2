@@ -1,8 +1,6 @@
 source ~/.profile
 export PATH="$PATH:/usr/local/bin:~/.local/bin/stack:$HOME/.local/bin:$(which node)"
 
-source $HOME/custom.sh
-
 os="$(uname -s)"
 
 if [[ $os -eq "Darwin" ]]; then
@@ -32,7 +30,7 @@ __git_files () {
     _wanted files expl 'local files' _files     
 }
 
-eval "$(ssh-agent -s)" > /dev/null && ssh-add > /dev/null
+# eval "$(ssh-agent -s)" > /dev/null && ssh-add > /dev/null
 
 alias d="docker"
 
@@ -73,6 +71,8 @@ alias rm='echo "Use trash-put either"; false'
 alias trash='trash-put'
 alias ls='exa'
 alias la='ls -la'
+alias timeout='gtimeout'
+alias ghcid='/Users/Emmanuel/.cabal/bin/ghcid'
 
 # Keep at end
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
