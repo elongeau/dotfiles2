@@ -103,7 +103,6 @@
   pp = !git pull && git push
   ri = rebase -i --autosquash
   mri = rebase -i
-  fix = commit --fixup
   fxi = !HASH=`git log --pretty=oneline origin/master.. | grep -v "fixup!" | head -20 | fzf` && git commit --fixup `echo ${HASH} | awk '{ print $1 }'`
   fx = !HASH=`git log --pretty=oneline origin/master.. | grep -v "fixup!" | head -20` && git commit --fixup `echo ${HASH} | awk '{ print $1 }'`
   cf = !"BRANCH=`git branch -a | grep -v '^*' | fzf ` && git checkout `echo $BRANCH | awk '{ $1=$1 };1' | sed -E 's/remotes\\/origin\\///g'`"
