@@ -20,49 +20,20 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
 Plug 'xolox/vim-misc'
-" Plug 'xolox/vim-colorscheme-switcher'
-" Plug 'altercation/vim-colors-solarized'
 Plug 'lifepillar/vim-solarized8'
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'ervandew/supertab'
-Plug 'osyo-manga/vim-over'
 Plug 'easymotion/vim-easymotion'
-Plug 'asciidoc/vim-asciidoc'
-Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
 Plug 'vimlab/split-term.vim'
-Plug 'ekalinin/Dockerfile.vim'
-Plug 'martinda/Jenkinsfile-vim-syntax'
-Plug 'dag/vim-fish'
 Plug 'vim-scripts/bash-support.vim'
 Plug 'skywind3000/asyncrun.vim'
 
 " Haskell
-" Plug 'alx741/vim-stylishask'
-Plug 'tinco/haskell.vim', { 'for': 'haskell' }
-" Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
-" Plug 'itchyny/vim-haskell-indent'
-" Plug 'dag/vim2hs', { 'for': 'haskell' }
-" Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
-" Plug 'neomake/neomake'
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins', 'for': 'haskell'  }
-" Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
-" Plug 'w0rp/ale', { 'for': 'haskell' }
-Plug 'sbdchd/neoformat', { 'for': 'haskell' }
-" Plug 'travitch/hasksyn'
+Plug 'w0rp/ale', { 'for': 'haskell' }
 Plug 'ndmitchell/ghcid', { 'rtp': 'plugins/nvim' }
-" Plug 'autozimu/LanguageClient-neovim', {
-"     \ 'branch': 'next',
-"     \ 'do': './install.sh'
-"     \ }
-
-" React
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
 
 " Initialize plugin system
 call plug#end()
@@ -70,7 +41,7 @@ call plug#end()
 set wrap linebreak nolist
 set nofoldenable
 set background=light
-colorscheme solarized8_light
+colorscheme solarized8
 
 " recharge le fichier courant dans vim
 noremap <silent><buffer> <F5> :exec 'source '.bufname('%')<CR>
@@ -93,19 +64,25 @@ let g:python3_host_prog = '/usr/local/bin/python3'
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " ALE
-" highlight SignColumn ctermbg=white
-" highlight ALEErrorSign ctermfg=red
-" highlight ALEWarningSign ctermfg=yellow
-" let g:ale_sign_error = '✘'
-" let g:ale_sign_warning = '▵'
-" let g:ale_sign_column_always = 1
-" let g:ale_set_loclist = 1
-" let g:ale_set_quickfix = 0
-" let g:ale_open_list = 0
+highlight SignColumn ctermbg=white
+highlight ALEErrorSign ctermfg=red
+highlight ALEWarningSign ctermfg=yellow
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '▵'
+let g:ale_sign_column_always = 1
+let g:ale_set_loclist = 1
+let g:ale_set_quickfix = 0
+let g:ale_open_list = 0
 
-" nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-" nmap <silent> <C-j> <Plug>(ale_next_wrap)
-" nmap <silent> <F2> <Plug>(ale_next_wrap)
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
+nmap <silent> <F2> <Plug>(ale_next_wrap)
+
+let g:ale_fix_on_save = 1
+let g:ale_fixers = {'haskell' : ['hfmt']}
+let g:ale_linters = {
+\   'haskell': ['ghc', 'hlint'],
+\}
 
 " Splits
 nnoremap <C-J> <C-W><C-J>
@@ -123,10 +100,6 @@ set shiftwidth=2
 " Tabular
 nnoremap <leader>= :Tabularize /=<CR>
 nnoremap <leader>- :Tabularize /-><CR>
-
-" neco
-" let g:haskellmode_completion_ghc = 0
-" autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
 " Autocommand
 autocmd BufEnter * :syntax sync fromstart
@@ -185,23 +158,6 @@ nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
 
-" Tabular 
-" let g:haskell_tabular = 1
-
-" vmap a= :Tabularize /=<CR>
-" vmap a; :Tabularize /::<CR>
-" vmap a- :Tabularize /-><CR>
-
-" Neoformat
-nnoremap <A-f> :%!stylish-haskell<CR>
-" set formatprg=stylish-haskell
-" augroup fmt
-"   autocmd!
-"   autocmd BufWritePre *.hs undojoin | :%!stylish-haskell
-" augroup END
-" let g:neoformat_enabled_haskell = ['brittany']
-" let g:neoformat_enabled_haskell = ['stylish-haskell']
-" let g:neoformat_enabled_haskell = ['stylish-haskell', 'brittany']
 
 " Terminal
 set splitright

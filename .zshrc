@@ -79,3 +79,7 @@ alias ghcid='/Users/Emmanuel/.cabal/bin/ghcid'
 export PATH="$PATH:$HOME/.rvm/bin"
 eval $(thefuck --alias)
 eval "$(direnv hook zsh)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/Emmanuel/.sdkman"
+[[ -s "/Users/Emmanuel/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/Emmanuel/.sdkman/bin/sdkman-init.sh"
