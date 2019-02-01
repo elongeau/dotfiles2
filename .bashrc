@@ -1,4 +1,4 @@
-source ../custom.sh
+source ~/custom.sh
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/Emmanuel/.sdkman"
 [[ -s "/Users/Emmanuel/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/Emmanuel/.sdkman/bin/sdkman-init.sh"
@@ -54,3 +54,10 @@ function dstop {
 
 alias dstop="dstop"
 alias trash="trash-put"
+
+# Go development
+export GOPATH="${HOME}/.go"
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+test -d "${GOPATH}" || mkdir "${GOPATH}"
+test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
