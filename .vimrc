@@ -1,3 +1,24 @@
+call plug#begin()
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Vim (Windows): '~/vimfiles/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
+
+" Make sure you use single quotes
+
+" Plugin outside ~/.vim/plugged with post-update hook
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Initialize plugin system
+" - Automatically executes `filetype plugin indent on` and `syntax enable`.
+call plug#end()
+" You can revert the settings after the call like so:
+"   filetype indent off   " Disable file-type-specific indentation
+"   syntax off            " Disable syntax highlighting
+"
 set noswapfile
 syntax enable
 
@@ -8,18 +29,6 @@ set rnu
 syntax on
 filetype plugin indent on
 
-" ======= Numbers =======
-" to an easily access of numbers with command on a french keyboad
-nnoremap & 1
-nnoremap é 2
-nnoremap " 3
-nnoremap ' 4
-nnoremap ( 5
-nnoremap § 6
-nnoremap è 7
-nnoremap ! 8
-nnoremap ç 9
-nnoremap à 0
 
 nnoremap wq :wq<CR>
 nnoremap <leader>w :w<CR>

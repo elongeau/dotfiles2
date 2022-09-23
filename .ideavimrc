@@ -18,6 +18,6 @@ imap <S-Right> <Esc>v<Right>
 set clipboard+=unnamed
 set iskeyword-=_
 set ideajoin
-
+set NERDTree
 set visualbell
 set noerrorbells
