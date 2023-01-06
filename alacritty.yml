@@ -1,0 +1,49 @@
+# Colors (Solarized Dark)
+colors:
+  # Default colors
+  primary:
+    background: '#002b36' # base03
+    foreground: '#839496' # base0
+
+  # Cursor colors
+  cursor:
+    text:   '#002b36' # base03
+    cursor: '#839496' # base0
+
+  # Normal colors
+  normal:
+    black:   '#073642' # base02
+    red:     '#dc322f' # red
+    green:   '#859900' # green
+    yellow:  '#b58900' # yellow
+    blue:    '#268bd2' # blue
+    magenta: '#d33682' # magenta
+    cyan:    '#2aa198' # cyan
+    white:   '#eee8d5' # base2
+
+  # Bright colors
+  bright:
+    black:   '#002b36' # base03
+    red:     '#d70000' # orange
+    green:   '#5f8700' # base01
+    yellow:  '#af8700' # base00
+    blue:    '#0087ff' # base0
+    magenta: '#af005f' # violet
+    cyan:    '#00afaf' # base1
+    white:   '#fdf6e3' # base3
+font:
+  size: 19
+#   # normal: 'Iosevka'
+  normal:
+    family: 'CaskaydiaCove Nerd Font Mono'
+    # family: Iosevka
+    style: Regular
+  bold:
+    style: Bold
+  italic:
+    style: Italic
+  bold_italic:
+    style: Bold Italic
+key_bindings:
+  - { key: Right, mods: Alt, chars: "\x1BF" }
+  - { key: Left,  mods: Alt, chars: "\x1BB" }

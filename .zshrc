@@ -8,7 +8,7 @@ ZSH_THEME="robbyrussell"
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
-plugins=(git docker docker-compose thefuck sbt scala kubectl zsh-autosuggestions)
+plugins=(git docker docker-compose thefuck sbt scala kubectl zsh-autosuggestions ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -38,6 +38,9 @@ alias ls='exa'
 alias ll='ls -l'
 alias la='ls -la'
 alias timeout='gtimeout'
+alias repas='bat ~/Dropbox/Zettelkasten/020\ Planning\ Repas.md'
+alias zet='FZF_DEFAULT_COMMAND="fd . ~/Dropbox/Zettelkasten"  fzf --preview "bat --style numbers,changes --color=always {}" | tr \\n \\0 | xargs -0 bat'
+alias zete='FZF_DEFAULT_COMMAND="fd . ~/Dropbox/Zettelkasten"  fzf --preview "bat --style numbers,changes --color=always {}" | tr \\n \\0 | xargs -0 nvim'
 
 # GIT heart FZF
 # -------------
@@ -50,9 +53,21 @@ zle -N edit-command-line
 bindkey '^xe' edit-command-line
 bindkey '^x^e' edit-command-line
 
+source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 export PATH="/opt/homebrew/opt/kubernetes-cli@1.22/bin:/Users/emmanuellongeau/Library/Application Support/JetBrains/Toolbox/scripts:$PATH"
+export PATH="$HOME/.git-customs:$PATH"
+export PATH="$HOME/.ghcup/bin:$PATH"
+export PATH="/opt/homebrew/bin:${PATH}"
+export PATH="/Users/emmanuellongeau/Library/Application\ Support/JetBrains/Toolbox/scripts:${PATH}"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+
+eval "$(direnv hook zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/opt/homebrew/opt/libiconv/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"

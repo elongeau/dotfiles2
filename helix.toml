@@ -1,0 +1,24 @@
+theme = "solarized_dark"
+
+[editor]
+line-number = "relative"
+mouse = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+git-global = false
+
+[keys.normal]
+C-w = ":bc"
+C-o = ":open ~/.config/helix/config.toml" # Maps the Control-o to opening of the helix config file
+[keys.normal.space]
+p = "command_palette"
+w = ":w"
+
+[keys.insert]
+"A-x" = "normal_mode" # Maps Alt-X to enter normal mode
+j = { k = "normal_mode" } # Maps `jk` to exit insert mode
