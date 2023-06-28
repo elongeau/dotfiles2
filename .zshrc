@@ -1,4 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
+export XDG_CONFIG_HOME="$HOME/.config"
 
 ZSH_THEME="robbyrussell"
 
@@ -71,3 +72,7 @@ eval "$(direnv hook zsh)"
 export PATH="/opt/homebrew/opt/libiconv/bin:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+alias ag="autogestao"
+export BAT_THEME="Solarized (light)"
+
+[ -f "/Users/emmanuellongeau/.ghcup/env" ] && source "/Users/emmanuellongeau/.ghcup/env" # ghcup-env

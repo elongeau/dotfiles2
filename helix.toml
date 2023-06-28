@@ -1,9 +1,11 @@
-# theme = "solarized_dark"
-theme = "gruvbox"
+theme = "solarized_light"
+# theme = "gruvbox_light"
 
 [editor]
 line-number = "relative"
-mouse = false
+mouse = true
+auto-format = true
+auto-save = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -12,13 +14,18 @@ select = "underline"
 
 [editor.file-picker]
 git-global = false
+hidden = false
+
 
 [keys.normal]
 C-w = ":bc"
-C-o = ":open ~/.config/helix/config.toml" # Maps the Control-o to opening of the helix config file
+y = ":clipboard-yank"
+p = ":clipboard-paste-after"
+P = ":clipboard-paste-before"
 [keys.normal.space]
 p = "command_palette"
-w = ":w"
+w = ":write"
+"space" = "goto_last_accessed_file"
 
 [keys.insert]
 "A-x" = "normal_mode" # Maps Alt-X to enter normal mode
