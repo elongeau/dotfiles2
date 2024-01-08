@@ -35,7 +35,7 @@ alias cask="brew cask"
 
 alias vim="nvim"
 alias trash='trash-put'
-alias ls='exa'
+alias ls='eza'
 alias ll='ls -l'
 alias la='ls -la'
 alias timeout='gtimeout'
@@ -76,3 +76,24 @@ alias ag="autogestao"
 export BAT_THEME="Solarized (light)"
 
 [ -f "/Users/emmanuellongeau/.ghcup/env" ] && source "/Users/emmanuellongeau/.ghcup/env" # ghcup-env
+export GITLAB_PAT="glpat-me94FazFHyH1PYUegJPD"
+#compdef gt
+###-begin-gt-completions-###
+#
+# yargs command completion script
+#
+# Installation: gt completion >> ~/.zshrc
+#    or gt completion >> ~/.zprofile on OSX.
+#
+_gt_yargs_completions()
+{
+  local reply
+  local si=$IFS
+  IFS=$'
+' reply=($(COMP_CWORD="$((CURRENT-1))" COMP_LINE="$BUFFER" COMP_POINT="$CURSOR" gt --get-yargs-completions "${words[@]}"))
+  IFS=$si
+  _describe 'values' reply
+}
+compdef _gt_yargs_completions gt
+###-end-gt-completions-###
+

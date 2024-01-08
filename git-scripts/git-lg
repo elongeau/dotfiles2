@@ -1,0 +1,6 @@
+#!/bin/sh
+git log --color=always --format=tformat:'%C(red)%h %C(green)%ai%C(reset) %C(bold blue)%<(15,trunc)%an%C(reset) %<(55,trunc)%s %C(yellow)CHOMPABLENEWLINES%dENDOFBODY%C(reset)' --date=local $1 \
+    | gsed -re 's/CHOMPABLENEWLINESENDOFBODY//' \
+    | gsed -re 's/CHOMPABLENEWLINES(.*)/\n\1/' \
+    | gsed -re 's/ENDOFBODY//'  \
+    | less --tabs=4 -rFX
