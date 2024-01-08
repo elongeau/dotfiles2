@@ -76,7 +76,6 @@ alias ag="autogestao"
 export BAT_THEME="Solarized (light)"
 
 [ -f "/Users/emmanuellongeau/.ghcup/env" ] && source "/Users/emmanuellongeau/.ghcup/env" # ghcup-env
-export GITLAB_PAT="glpat-me94FazFHyH1PYUegJPD"
 #compdef gt
 ###-begin-gt-completions-###
 #
