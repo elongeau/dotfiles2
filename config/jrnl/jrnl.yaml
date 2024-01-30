@@ -1,0 +1,19 @@
+colors:
+  body: none
+  date: blue
+  tags: yellow
+  title: magenta
+default_hour: 9
+default_minute: 0
+editor: vim
+encrypt: false
+highlight: true
+indent_character: '|'
+journals:
+  default:
+    journal: /Users/emmanuellongeau/.local/share/jrnl/journal.txt
+linewrap: 120
+tagsymbols: '#@'
+template: false
+timeformat: '%F %r'
+version: v4.0.1

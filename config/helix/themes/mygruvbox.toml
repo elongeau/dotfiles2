@@ -1,0 +1,6 @@
+inherits = "gruvbox"
+
+"ui.background" ={ bg =  "black"} 
+
+[palette]
+black = "#414b50"

@@ -1,21 +1,21 @@
-format = """
-[](fg:#B16286)\
-$username\
-[](fg:#B16286 bg:#d3869b)\
-$directory\
-[](fg:#d3869b bg:#fabd2f)\
-$git_branch\
-$git_status\
-[](fg:#fabd2f bg:#83a598 )\
-$haskell\
-[](fg:#83a598 bg:#83a598 )\
-$scala\
-[](fg:#83a598 bg:#458588)\
-[ ](fg:#458588)\
-$line_break\
-$character
-"""
-
+# format = """
+# [](fg:#B16286)\
+# $username\
+# [](fg:#B16286 bg:#d3869b)\
+# $directory\
+# [](fg:#d3869b bg:#fabd2f)\
+# $git_branch\
+# $git_status\
+# [](fg:#fabd2f bg:#83a598 )\
+# $haskell\
+# [](fg:#83a598 bg:#83a598 )\
+# $scala\
+# [](fg:#83a598 bg:#458588)\
+# [ ](fg:#458588)\
+# $line_break\
+# $character
+# """
+#
 # Disable the blank line at the start of the prompt
 add_newline = false
 
@@ -27,8 +27,8 @@ style_root = "bg:#9A348E"
 format = '[$user ]($style)'
 
 [directory]
-style = "bg:#d3869b fg:#282828"
-format = "[ $path ]($style)"
+# style = "bg:#d3869b fg:#282828"
+# format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
@@ -50,35 +50,43 @@ error_symbol = "[✗](bold red) "
 
 [docker_context]
 symbol = " "
-style = "bg:#06969A fg:#282828"
-format = '[ $symbol $context ]($style) $path'
+disabled = true
+# style = "bg:#06969A fg:#282828"
+# format = '[ $symbol $context ]($style) $path'
 
 [git_branch]
 symbol = ""
-style = "bg:#fabd2f fg:#282828"
-format = '[ $symbol $branch ]($style)'
+# style = "bg:#fabd2f fg:#282828"
+# format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#fabd2f fg:#282828"
-format = '[$all_status$ahead_behind ]($style)'
+# style = "bg:#fabd2f fg:#282828"
+# format = '[$all_status$ahead_behind ]($style)'
 
 [haskell]
 symbol = " "
-style = "bg:#83a598 fg:#282828"
-format = '[ $symbol ($version) ]($style)'
+# style = "bg:#83a598 fg:#282828"
+# format = '[ $symbol ($version) ]($style)'
+
+[aws]
+disabled = true
 
 [scala]
+disabled = true
 symbol = " "
-style = "bg:#83a598 fg:#282828"
-format = '[ $symbol ($version) ]($style)'
+# style = "bg:#83a598 fg:#282828"
+# format = '[ $symbol ($version) ]($style)'
+
+[java]
+disabled = true
 
 [rust]
 symbol = ""
-style = "bg:#83a598 fg:#282828"
-format = '[ $symbol ($version) ]($style)'
+# style = "bg:#83a598 fg:#282828"
+# format = '[ $symbol ($version) ]($style)'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#458588fg:#282828"
-format = '[ ♥ $time ]($style)'
+# style = "bg:#458588fg:#282828"
+# format = '[ ♥ $time ]($style)'

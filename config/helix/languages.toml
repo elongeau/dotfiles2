@@ -1,0 +1,2 @@
+[[haskell]]
+formatter = { command = "treefmt"}

@@ -1,0 +1,37 @@
+
+# 2022-12-29 09:01:04.666655
++select *
++from orders;
+
+# 2022-12-29 09:01:16.681789
++exit
+
+# 2022-12-29 09:01:43.006746
++\d
+
+# 2022-12-29 09:01:52.725671
++\?
+
+# 2022-12-29 09:02:08.496800
++\dn
+
+# 2022-12-29 09:05:37.944736
++select *
++from orders;
+
+# 2022-12-29 09:05:50.659983
++select 
+
+# 2022-12-29 09:07:17.005860
++select *
++from orders o
++join delivery_point dp on o.order_id = dp.order_id
++join address a ;
+
+# 2022-12-29 09:07:26.749288
++select *
++from orders o
++join delivery_point dp on o.order_id = dp.order_id;
+
+# 2022-12-29 09:07:40.377137
++exit

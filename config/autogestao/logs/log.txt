@@ -1,0 +1,499 @@
+[2023-03-24 07:39:54.163107 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (Add (Desc {unDesc = "foo"})))[2023-03-24 07:40:21.232983 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (Add (Desc {unDesc = "foo"})))[2023-03-24 07:40:35.878613 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (Add (Desc {unDesc = "foo"})))[2023-03-27 19:25:35.987266 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (Add (Desc {unDesc = "foo"})))
+[2023-03-27 19:25:38.972875 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (Add (Desc {unDesc = "foo"})))
+[2023-03-27 19:26:00.037196 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (Add (Desc {unDesc = "foo"})))
+[2023-03-27 19:26:16.652495 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (Add (Desc {unDesc = "bar"})))
+[2023-03-27 19:26:19.958483 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-03 20:11:28.840812 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-03 20:11:52.198741 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (Add (Desc {unDesc = "do stuff"}) [TaskTag {unTag = "project"},TaskTag {unTag = "test"}]))
+[2023-04-03 20:11:55.065883 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-03 20:13:13.296962 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 1}) Done))
+[2023-04-03 20:13:15.907531 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 2}) Done))
+[2023-04-03 20:13:18.109142 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 3}) Done))
+[2023-04-03 20:13:21.970066 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-03 20:13:36.052044 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 6}) Ongoing))
+[2023-04-03 20:13:43.497486 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 5}) Next))
+[2023-04-03 20:13:47.073188 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-03 20:13:59.032752 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 9}) Ongoing))
+[2023-04-03 20:14:01.424936 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-03 20:14:07.916357 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Ongoing,Next,Todo,Done,Canceled]) SortByStatus
+[2023-04-03 20:14:19.359331 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 7}) Canceled))
+[2023-04-03 20:14:21.289286 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Ongoing,Next,Todo,Done,Canceled]) SortByStatus
+[2023-04-11 12:13:33.926894 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-11 12:13:40.865534 UTC] [INFO] Receive input UserQueryTasks (Tags [TaskTag {unTag = "project"}]) SortByStatus
+[2023-04-11 12:13:53.374513 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 6}) Done))
+[2023-04-11 12:13:56.400106 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 9}) Done))
+[2023-04-11 12:13:58.880018 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 5}) Done))
+[2023-04-11 12:14:00.927096 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 4}) Done))
+[2023-04-11 12:14:02.906189 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 8}) Done))
+[2023-04-11 12:14:05.672186 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-11 12:14:10.432391 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Ongoing,Next,Todo,Done,Canceled]) SortByStatus
+[2023-04-11 12:15:09.393769 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (Add (Desc {unDesc = "Add a ToIgnore status in place of Unknown"}) [TaskTag {unTag = "order"}]))
+[2023-04-11 12:15:14.57068 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Ongoing,Next,Todo,Done,Canceled]) SortByStatus
+[2023-04-11 12:15:21.631528 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-11 12:15:44.020613 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 10}) Ongoing))
+[2023-04-11 12:15:47.645646 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-11 19:53:03.259295 UTC] [INFO] Receive input OpenEditor
+[2023-04-11 19:56:48.266786 UTC] [INFO] Receive input OpenEditor
+[2023-04-11 20:16:14.972913 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-11 20:16:18.804106 UTC] [INFO] Receive input OpenEditor (TaskId {unId = 10})
+[2023-04-11 20:16:30.851209 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-11 20:16:33.908768 UTC] [INFO] Receive input OpenEditor (TaskId {unId = 10})
+[2023-04-11 20:16:47.303296 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-11 20:19:31.973308 UTC] [INFO] Receive input OpenEditor (TaskId {unId = 42})
+[2023-04-11 20:19:34.880106 UTC] [INFO] Receive input OpenEditor (TaskId {unId = 10})
+[2023-04-14 06:46:33.868834 UTC] [INFO] Receive input OpenEditor (TaskId {unId = 10})
+[2023-04-14 06:46:55.948623 UTC] [INFO] Receive input OpenEditor (TaskId {unId = 10})
+[2023-04-14 06:47:02.073388 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-14 12:18:39.797884 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (Add (Desc {unDesc = "Call back engie"}) [TaskTag {unTag = "home"}]))
+[2023-04-14 12:18:46.183793 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-14 14:50:54.840396 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-14 14:51:39.572422 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-14 14:52:01.351627 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 10}) Done))
+[2023-04-14 14:52:45.970006 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (Add (Desc {unDesc = "Meet with colas to speak about dependencies issue"}) [TaskTag {unTag = "dependencies"}]))
+[2023-04-14 14:53:03.678663 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (Add (Desc {unDesc = "Do a POC on quill"}) [TaskTag {unTag = "dependencies"}]))
+[2023-04-14 14:53:13.937369 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 12}) Next))
+[2023-04-14 14:53:15.297126 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-14 14:54:22.212186 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-14 14:54:30.482453 UTC] [INFO] Receive input OpenEditor (TaskId {unId = 12})
+[2023-04-17 06:46:01.975674 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-17 06:46:09.571942 UTC] [INFO] Receive input UserQueryTasks (Tags [TaskTag {unTag = "gsheet"}]) SortByStatus
+[2023-04-17 06:46:32.560339 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (Add (Desc {unDesc = "Merge counters"}) [TaskTag {unTag = "gsheet"}]))
+[2023-04-17 06:46:51.006412 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 14}) Ongoing))
+[2023-04-17 06:47:20.393422 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (Add (Desc {unDesc = "Merge status array"}) [TaskTag {unTag = "gsheet"}]))
+[2023-04-17 06:47:22.868568 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-17 06:47:34.139023 UTC] [INFO] Receive input UserQueryTasks (Tags [TaskTag {unTag = "gsheet"}]) SortByStatus
+[2023-04-17 06:48:01.586306 UTC] [INFO] Receive input UserQueryTasks (Tags [TaskTag {unTag = "gsheet"}]) SortByStatus
+[2023-04-17 09:44:41.229776 UTC] [INFO] Receive input UserQueryTasks (Tags [TaskTag {unTag = "gsheet"}]) SortByStatus
+[2023-04-17 09:45:02.742828 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 14}) Done))
+[2023-04-17 09:45:05.576024 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 15}) Done))
+[2023-04-17 09:45:08.260632 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-17 09:45:21.439201 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 13}) Ongoing))
+[2023-04-17 09:45:24.686907 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-17 20:19:36.3743 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-17 20:19:44.826473 UTC] [INFO] Receive input OpenEditor (TaskId {unId = 13})
+[2023-04-17 20:23:23.934017 UTC] [INFO] Receive input OpenEditor (TaskId {unId = 13})
+[2023-04-17 20:23:41.848954 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-17 20:24:02.622709 UTC] [INFO] Receive input OpenEditor (TaskId {unId = 13})
+[2023-04-17 20:24:11.335107 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-17 20:24:20.786176 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-17 20:24:22.591937 UTC] [INFO] Receive input OpenEditor (TaskId {unId = 13})
+[2023-04-17 20:24:31.403082 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-18 14:37:18.740446 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (Add (Desc {unDesc = "Write about pros & cons"}) [TaskTag {unTag = "quill"}]))
+[2023-04-18 14:37:22.349332 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-21 14:19:05.073492 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-21 14:19:22.84207 UTC] [INFO] Receive input OpenEditor (TaskId {unId = 13})
+[2023-04-21 14:19:30.733823 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-21 14:29:21.891403 UTC] [INFO] Receive input OpenEditor (TaskId {unId = 13})
+[2023-04-21 14:29:41.261888 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-21 14:30:23.698021 UTC] [INFO] Receive input OpenEditor (TaskId {unId = 13})
+[2023-04-21 14:30:33.677902 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-21 14:30:39.459276 UTC] [INFO] Receive input OpenEditor (TaskId {unId = 1})
+[2023-04-21 14:30:47.300016 UTC] [INFO] Receive input OpenEditor (TaskId {unId = 13})
+[2023-04-21 14:31:00.294875 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-21 15:11:23.405167 UTC] [INFO] Receive input OpenEditor New
+[2023-04-21 15:11:58.218211 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-21 15:12:08.684851 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 17}))
+[2023-04-21 15:12:21.459635 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-21 15:12:23.623232 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 17}))
+[2023-04-21 15:12:45.039524 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 17}) Canceled))
+[2023-04-21 15:12:53.401711 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-22 10:18:24.474793 UTC] [INFO] Receive input OpenEditor New
+[2023-04-24 07:25:55.029924 UTC] [INFO] Receive input OpenEditor New
+[2023-04-24 07:26:31.340974 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 18}) Ongoing))
+[2023-04-24 07:26:34.45487 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-24 07:26:47.92432 UTC] [INFO] Receive input OpenEditor New
+[2023-04-24 07:27:15.217324 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 19}) Next))
+[2023-04-24 07:27:17.216626 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-24 07:27:54.774073 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Ongoing,Next,Todo,Done,Canceled]) SortByStatus
+[2023-04-24 07:28:02.359086 UTC] [INFO] Receive input UserQueryTasks (Tags [TaskTag {unTag = "test"}]) SortByStatus
+[2023-04-24 07:28:12.275634 UTC] [INFO] Receive input UserQueryTasks (Tags [TaskTag {unTag = "quill"}]) SortByStatus
+[2023-04-24 07:29:57.290676 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-24 07:30:17.72217 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (Add (Desc {unDesc = "foo"}) []))
+[2023-04-24 07:30:29.685522 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-24 07:30:34.140284 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 20}) Canceled))
+[2023-04-24 07:30:50.64794 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-24 10:01:04.787266 UTC] [INFO] Receive input OpenEditor New
+[2023-04-24 10:01:39.721126 UTC] [INFO] Receive input UserQueryTasks (Tags [TaskTag {unTag = "quill"}]) SortByStatus
+[2023-04-24 10:01:50.676641 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 13}) Done))
+[2023-04-24 10:01:58.644626 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 19}) Done))
+[2023-04-24 10:02:07.196051 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 16}) Ongoing))
+[2023-04-24 10:02:11.826857 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 21}) Next))
+[2023-04-24 10:02:15.206381 UTC] [INFO] Receive input UserQueryTasks (Tags [TaskTag {unTag = "quill"}]) SortByStatus
+[2023-04-24 14:56:27.316646 UTC] [INFO] Receive input OpenEditor New
+[2023-04-24 14:56:52.513654 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 22}) Next))
+[2023-04-24 14:56:56.392124 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 22}))
+[2023-04-24 14:57:05.503808 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-24 14:57:13.200738 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 18}) Done))
+[2023-04-24 14:57:17.049887 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-25 06:07:00.293417 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-25 06:54:39.385413 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-25 06:54:45.131088 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 16}) Done))
+[2023-04-25 06:54:50.907033 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 22}) Done))
+[2023-04-25 06:54:52.38122 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-25 06:55:01.162344 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 21}) Done))
+[2023-04-25 06:55:03.82733 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-25 06:55:13.441152 UTC] [INFO] Receive input OpenEditor New
+[2023-04-25 06:56:02.98006 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 23}) Ongoing))
+[2023-04-25 06:56:04.986884 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-25 06:56:25.615627 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 23}))
+[2023-04-25 06:56:50.524816 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-25 06:58:35.85668 UTC] [INFO] Receive input UserQueryTasks (Tags [TaskTag {unTag = "gsheet"}]) SortByStatus
+[2023-04-25 08:47:00.868977 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-25 08:47:06.561043 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 23}) Done))
+[2023-04-25 08:47:09.548677 UTC] [INFO] Receive input OpenEditor New
+[2023-04-25 08:47:32.99031 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 24}) Ongoing))
+[2023-04-25 13:23:13.681786 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-25 13:23:27.332498 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 12}) Done))
+[2023-04-25 13:23:31.590125 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-25 14:23:11.682876 UTC] [INFO] Receive input OpenEditor New
+[2023-04-25 14:23:33.979685 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 25}) Next))
+[2023-04-25 14:37:45.032917 UTC] [INFO] Receive input OpenEditor New
+[2023-04-25 14:38:03.903824 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 26}) Ongoing))
+[2023-04-25 14:38:06.177176 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-25 14:38:14.733023 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 24}) Done))
+[2023-04-26 07:58:58.373015 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-26 07:59:05.51557 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 25}) Done))
+[2023-04-26 09:31:26.448235 UTC] [INFO] Receive input OpenEditor New
+[2023-04-26 09:32:03.757927 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 27}) Ongoing))
+[2023-04-26 09:32:05.385182 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-26 09:32:19.712661 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 26}) Done))
+[2023-04-26 09:32:21.27858 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-26 09:32:24.8963 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Ongoing,Next,Todo,Done,Canceled]) SortByStatus
+[2023-04-26 09:32:45.072849 UTC] [INFO] Receive input OpenEditor New
+[2023-04-26 09:33:23.83952 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 28}) Next))
+[2023-04-26 09:33:26.61674 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-26 09:33:40.850356 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 28}))
+[2023-04-26 09:34:00.9893 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-26 12:05:20.752738 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 28}))
+[2023-04-26 12:18:21.05206 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-26 12:22:05.90886 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 28}) Done))
+[2023-04-26 12:22:57.768574 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 27}) Next))
+[2023-04-26 13:38:34.069994 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-26 13:38:40.141144 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 27}) Ongoing))
+[2023-04-26 14:57:57.045409 UTC] [INFO] Receive input OpenEditor New
+[2023-04-26 14:58:23.649634 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 29}) Next))
+[2023-04-26 14:58:24.668046 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-26 14:58:34.470143 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 27}) Done))
+[2023-04-27 11:55:25.206399 UTC] [INFO] Receive input OpenEditor New
+[2023-04-27 11:55:51.3513 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-27 11:56:00.347455 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 30}))
+[2023-04-27 11:56:16.866306 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 30}) Ongoing))
+[2023-04-27 11:56:26.607271 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-27 11:56:36.375227 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 30}))
+[2023-04-27 11:56:49.580176 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-28 06:21:06.786133 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-04-29 15:56:05.836957 UTC] [INFO] Receive input OpenEditor New
+[2023-04-29 15:56:12.773537 UTC] [INFO] Receive input OpenEditor New
+[2023-04-29 15:56:27.171689 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 17}))
+[2023-04-29 15:56:38.726302 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 17}))
+[2023-04-29 16:02:54.903328 UTC] [INFO] Receive input OpenEditor New
+[2023-05-02 12:27:50.298461 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-02 12:27:58.940787 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 29}) Done))
+[2023-05-02 12:28:01.788451 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-02 12:28:07.213131 UTC] [INFO] Receive input OpenEditor New
+[2023-05-02 12:28:55.954622 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 31}) Next))
+[2023-05-02 14:12:09.261348 UTC] [INFO] Receive input OpenEditor New
+[2023-05-02 14:12:27.726098 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 32}) Next))
+[2023-05-02 14:56:47.591353 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-02 14:56:53.889394 UTC] [INFO] Receive input UserQueryTasks (AllOf [Tags [TaskTag {unTag = "gsheet"}],StatusIn [Ongoing]]) SortByStatus
+[2023-05-02 14:57:02.045033 UTC] [INFO] Receive input UserQueryTasks (AllOf [Tags [TaskTag {unTag = "gsheet"}],StatusIn [Next]]) SortByStatus
+[2023-05-02 14:57:04.43011 UTC] [INFO] Receive input UserQueryTasks (AllOf [Tags [TaskTag {unTag = "gsheet"}],StatusIn [Ongoing,Next]]) SortByStatus
+[2023-05-02 14:57:07.048946 UTC] [INFO] Receive input UserQueryTasks (AllOf [Tags [TaskTag {unTag = "gsheet"}],StatusIn [Ongoing,Next]]) SortByStatus
+[2023-05-02 14:57:18.043307 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-02 14:57:23.915607 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 30}) Done))
+[2023-05-02 14:57:31.022615 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 32}) Ongoing))
+[2023-05-02 14:57:33.161504 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-02 14:57:36.46472 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 11}) Done))
+[2023-05-02 14:57:38.125023 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-04 04:50:18.409052 UTC] [INFO] Receive input OpenEditor New
+[2023-05-04 04:50:44.504863 UTC] [INFO] Receive input OpenEditor New
+[2023-05-04 04:52:03.219669 UTC] [INFO] Receive input OpenEditor New
+[2023-05-04 06:12:08.906091 UTC] [INFO] Receive input OpenEditor New
+[2023-05-05 06:29:45.724125 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-05 06:29:57.205657 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 32}) Done))
+[2023-05-05 06:30:12.866747 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 35}))
+[2023-05-05 06:30:46.082154 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-05 07:07:16.047741 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-05 07:07:23.075332 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 34}) Done))
+[2023-05-05 07:07:37.767503 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 35}))
+[2023-05-05 07:09:58.462605 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-05 07:10:05.433133 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 33}) Done))
+[2023-05-05 07:10:09.290595 UTC] [INFO] Receive input OpenEditor New
+[2023-05-05 07:10:34.413417 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-05 08:02:44.966285 UTC] [INFO] Receive input OpenEditor New
+[2023-05-05 08:03:01.625399 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 38}) Next))
+[2023-05-05 08:03:03.318668 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-05 10:57:55.060724 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-05 10:58:02.752247 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 37}))
+[2023-05-05 10:58:07.604969 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-05 12:12:41.203522 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-05 12:14:19.38711 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-05 12:14:36.902396 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 38}) Done))
+[2023-05-05 12:14:43.135528 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 37}))
+[2023-05-05 12:15:10.537854 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 37}) Next))
+[2023-05-05 12:15:12.55396 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-09 05:42:06.882892 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-09 05:42:15.427203 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 37}) Ongoing))
+[2023-05-09 07:13:32.967097 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-09 07:13:36.943057 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 37}) Done))
+[2023-05-09 07:33:08.205028 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-09 07:33:14.921515 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 31}) Ongoing))
+[2023-05-09 08:04:34.842764 UTC] [INFO] Receive input OpenEditor New
+[2023-05-09 08:04:49.44552 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 39}) Next))
+[2023-05-09 08:04:51.497205 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-10 07:34:12.521772 UTC] [INFO] Receive input OpenEditor New
+[2023-05-10 07:34:46.410243 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 40}) Next))
+[2023-05-10 07:34:47.333555 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-10 07:34:56.183524 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 39}) Done))
+[2023-05-10 07:35:04.096919 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 35}) Canceled))
+[2023-05-10 11:58:26.33062 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-10 11:58:36.87081 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 31}) Next))
+[2023-05-10 11:58:40.673659 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 40}) Ongoing))
+[2023-05-10 11:58:43.044735 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-10 13:52:54.907566 UTC] [INFO] Receive input OpenEditor New
+[2023-05-10 13:53:29.388762 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 41}) Next))
+[2023-05-11 04:33:56.046046 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-11 04:34:01.519527 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 40}) Done))
+[2023-05-11 04:34:06.445713 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 41}) Ongoing))
+[2023-05-11 12:12:58.777601 UTC] [INFO] Receive input OpenEditor New
+[2023-05-11 12:13:33.623797 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-11 12:13:41.486847 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 41}) Done))
+[2023-05-12 06:52:58.432264 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-12 06:53:08.780894 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-12 11:50:24.18586 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-12 11:51:40.528427 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 31}) Done))
+[2023-05-12 11:51:45.65235 UTC] [INFO] Receive input OpenEditor New
+[2023-05-12 11:52:40.929152 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-12 11:53:14.510441 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 42}) Next))
+[2023-05-12 19:58:24.254804 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-12 19:58:34.03592 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 42}))
+[2023-05-12 20:00:36.021715 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 42}))
+[2023-05-12 20:47:15.601787 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 42}))
+[2023-05-12 20:47:19.772321 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 42}))
+[2023-05-12 20:47:35.883144 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 42}))
+[2023-05-12 20:47:43.572779 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 42}))
+[2023-05-15 04:35:39.887645 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-15 04:36:00.612094 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-15 04:42:29.281067 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Ongoing,Next,Todo,Done,Canceled]) SortByStatus
+[2023-05-15 04:44:31.088405 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-15 07:09:59.431915 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-15 07:10:08.111776 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 42}) Ongoing))
+[2023-05-15 08:03:45.500514 UTC] [INFO] Receive input OpenEditor New
+[2023-05-16 15:02:56.816734 UTC] [INFO] Receive input OpenEditor New
+[2023-05-17 09:53:52.776619 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-17 09:54:02.169178 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 44}) Done))
+[2023-05-17 09:54:06.609518 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 45}) Done))
+[2023-05-17 09:54:08.353589 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-17 12:05:13.248915 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 42}))
+[2023-05-17 12:05:43.133647 UTC] [INFO] Receive input OpenEditor New
+[2023-05-17 12:06:11.686904 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-22 09:00:23.221766 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-22 09:00:33.353333 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 46}) Done))
+[2023-05-22 09:01:46.996379 UTC] [INFO] Receive input OpenEditor New
+[2023-05-22 09:02:08.831036 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-22 09:02:16.644207 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 42}) Done))
+[2023-05-22 09:02:20.690835 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 47}) Next))
+[2023-05-24 12:08:16.460701 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-24 12:08:26.90665 UTC] [INFO] Receive input OpenEditor New
+[2023-05-24 12:08:44.823103 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 48}) Ongoing))
+[2023-05-24 13:15:38.110365 UTC] [INFO] Receive input OpenEditor New
+[2023-05-24 13:16:00.563633 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 49}) Next))
+[2023-05-24 13:16:01.444755 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-24 13:18:17.252336 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-25 13:40:27.068507 UTC] [INFO] Receive input OpenEditor New
+[2023-05-25 13:40:44.729515 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-25 13:40:49.853026 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 49}) Done))
+[2023-05-30 07:00:18.116091 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-30 07:59:34.874982 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-30 07:59:44.100253 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 50}) Next))
+[2023-05-30 08:51:22.810173 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-30 08:51:27.145386 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 50}) Done))
+[2023-05-31 06:20:27.931129 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-31 06:20:33.757672 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 48}) Done))
+[2023-05-31 06:20:37.477212 UTC] [INFO] Receive input OpenEditor New
+[2023-05-31 06:20:57.346826 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 51}) Next))
+[2023-05-31 06:21:01.965714 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-31 06:21:11.88775 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 43}) Done))
+[2023-05-31 06:21:13.707908 UTC] [INFO] Receive input OpenEditor New
+[2023-05-31 06:21:34.29263 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-31 07:41:43.069257 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-05-31 07:41:46.894688 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 52}) Done))
+[2023-06-01 04:34:13.885073 UTC] [INFO] Receive input OpenEditor New
+[2023-06-01 04:34:47.04245 UTC] [INFO] Receive input OpenEditor New
+[2023-06-01 04:35:24.772404 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 54}) Next))
+[2023-06-01 04:35:27.358872 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-01 04:35:41.388411 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 51}) Done))
+[2023-06-01 04:35:48.722371 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 36}) Done))
+[2023-06-01 04:35:51.163665 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-05 06:44:34.557577 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-05 06:44:41.240435 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 53}) Done))
+[2023-06-05 06:55:28.959645 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-05 06:55:37.240598 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 47}) Done))
+[2023-06-05 08:57:57.466436 UTC] [INFO] Receive input OpenEditor New
+[2023-06-05 08:58:11.897661 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 55}) Next))
+[2023-06-05 08:58:12.87628 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-05 09:12:04.031275 UTC] [INFO] Receive input OpenEditor New
+[2023-06-05 11:50:16.43199 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-06 07:29:58.304444 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-06 07:30:06.165275 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 55}) Done))
+[2023-06-06 12:02:47.313934 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-06 12:02:58.594228 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 56}))
+[2023-06-06 12:03:20.437499 UTC] [INFO] Receive input OpenEditor New
+[2023-06-06 12:03:47.278013 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 57}) Ongoing))
+[2023-06-06 12:03:48.435146 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-13 06:08:12.655085 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-13 06:08:16.494287 UTC] [INFO] Receive input OpenEditor New
+[2023-06-13 06:08:29.684497 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-13 06:08:38.708722 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 58}) Canceled))
+[2023-06-13 06:08:44.176927 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-13 06:08:50.836679 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 54}) Done))
+[2023-06-13 06:08:59.77828 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 56}) Ongoing))
+[2023-06-13 06:09:02.86881 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 57}) Next))
+[2023-06-13 06:09:04.339323 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-13 06:20:36.878084 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-13 06:20:43.0614 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 57}))
+[2023-06-13 06:21:04.34426 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 57}))
+[2023-06-13 06:22:30.997113 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 57}))
+[2023-06-13 06:22:34.637141 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-13 08:51:34.59545 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-13 08:51:38.578123 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 56}))
+[2023-06-13 08:51:48.04297 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-13 08:51:55.924627 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 57}) Ongoing))
+[2023-06-14 13:45:04.405102 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-14 13:45:10.419138 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 56}))
+[2023-06-14 13:45:22.951999 UTC] [INFO] Receive input OpenEditor New
+[2023-06-14 13:45:37.497495 UTC] [INFO] Receive input OpenEditor New
+[2023-06-14 13:46:12.817174 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 60}) Next))
+[2023-06-14 13:46:18.824169 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 60}) Todo))
+[2023-06-14 13:46:19.800291 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-14 13:46:27.841346 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 59}) Next))
+[2023-06-14 13:46:30.554457 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 57}) Done))
+[2023-06-14 13:46:31.572274 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-14 13:46:38.524068 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 56}) Next))
+[2023-06-15 12:28:45.460159 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-15 12:28:48.839135 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 56}) Done))
+[2023-06-15 12:28:53.576151 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 59}) Done))
+[2023-06-15 12:28:56.886701 UTC] [INFO] Receive input OpenEditor New
+[2023-06-15 12:29:15.402962 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 61}) Next))
+[2023-06-15 12:29:16.804811 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-16 04:35:59.757188 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-16 04:40:59.854935 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-16 06:54:53.359911 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-16 06:55:01.736132 UTC] [INFO] Receive input OpenEditor New
+[2023-06-16 06:55:33.81744 UTC] [INFO] Receive input OpenEditor New
+[2023-06-16 07:04:32.0386 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-16 07:04:40.49814 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 63}) Waiting))
+[2023-06-16 07:13:18.280701 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 63}) Waiting))
+[2023-06-16 07:16:50.30874 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 63}) Waiting))
+[2023-06-16 07:16:54.735003 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 63}) Next))
+[2023-06-16 07:16:58.22217 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 63}) Waiting))
+[2023-06-16 12:20:46.256358 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 63}) Waiting))
+[2023-06-16 12:25:49.670823 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 63}) Waiting))
+[2023-06-16 12:26:14.432523 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 63}) Waiting))
+[2023-06-16 12:27:33.528924 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 63}) Waiting))
+[2023-06-16 12:57:07.435394 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 63}) Waiting))
+[2023-06-16 12:57:52.086881 UTC] [INFO] Receive input OpenEditor New
+[2023-06-16 12:58:12.717731 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-16 12:58:25.227393 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 64}) Next))
+[2023-06-16 12:58:34.633916 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 64}) Waiting))
+[2023-06-16 12:58:38.594948 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing]) SortByStatus
+[2023-06-16 13:00:18.461801 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-16 13:00:54.288255 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-16 13:00:59.373719 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 64}) Canceled))
+[2023-06-16 13:01:03.426376 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 62}) Waiting))
+[2023-06-16 13:01:11.578756 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-16 13:01:16.82405 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 60}) Waiting))
+[2023-06-16 13:01:21.037736 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 63}) Waiting))
+[2023-06-16 13:01:24.340328 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 63}))
+[2023-06-16 13:01:34.703817 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 60}))
+[2023-06-16 13:01:44.906608 UTC] [INFO] Receive input OpenEditor (Edit (TaskId {unId = 62}))
+[2023-06-16 13:01:50.398815 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-16 13:01:55.558524 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 60}) Done))
+[2023-06-16 13:02:02.485949 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 62}) Done))
+[2023-06-16 13:02:06.640678 UTC] [INFO] Receive input OpenEditor New
+[2023-06-16 13:02:26.971469 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 65}) Ongoing))
+[2023-06-16 13:02:27.913312 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-16 13:02:32.747769 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 61}) Done))
+[2023-06-19 04:38:09.827192 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-19 04:38:16.397398 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 65}) Done))
+[2023-06-19 04:38:31.856057 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 63}) Done))
+[2023-06-19 05:35:53.722185 UTC] [INFO] Receive input OpenEditor New
+[2023-06-19 08:31:33.951308 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-19 08:31:37.554621 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 66}) Done))
+[2023-06-19 08:32:44.646204 UTC] [INFO] Receive input OpenEditor New
+[2023-06-19 08:33:01.251218 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 67}) Ongoing))
+[2023-06-21 05:00:31.15403 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-21 05:00:35.523995 UTC] [INFO] Receive input OpenEditor New
+[2023-06-21 05:02:17.477091 UTC] [INFO] Receive input OpenEditor New
+[2023-06-21 05:02:37.513915 UTC] [INFO] Receive input OpenEditor New
+[2023-06-21 12:36:30.673368 UTC] [INFO] Receive input OpenEditor New
+[2023-06-26 04:31:28.493779 UTC] [INFO] Receive input OpenEditor New
+[2023-06-28 12:44:57.417788 UTC] [INFO] Receive input OpenEditor New
+[2023-06-28 12:45:10.692561 UTC] [INFO] Receive input OpenEditor New
+[2023-06-28 12:45:29.565629 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-28 12:45:36.258993 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 69}) Done))
+[2023-06-28 12:45:39.836602 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 71}) Done))
+[2023-06-28 12:45:46.77341 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 70}) Done))
+[2023-06-28 12:45:48.077734 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-28 12:45:54.384192 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 73}) Next))
+[2023-06-28 13:34:14.926415 UTC] [INFO] Receive input OpenEditor New
+[2023-06-28 14:52:41.767777 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-28 14:52:51.357147 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 67}) Done))
+[2023-06-28 14:53:11.769928 UTC] [INFO] Receive input OpenEditor New
+[2023-06-29 06:38:56.609856 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-29 06:39:03.010629 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 73}) Done))
+[2023-06-29 06:43:46.628578 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-29 06:43:55.658346 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 74}) Next))
+[2023-06-29 06:43:57.040334 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-29 06:45:13.272138 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-29 06:50:17.294903 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-29 08:18:03.727248 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-29 08:36:10.800676 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 74}) Done))
+[2023-06-29 08:36:14.183079 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-29 08:42:53.181457 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 75}) Ongoing))
+[2023-06-29 08:42:57.610667 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-29 08:51:10.89775 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-29 08:53:43.197612 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Ongoing,Next,Todo,Done,Canceled,Waiting]) SortByStatus
+[2023-06-29 09:05:34.523338 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-29 09:05:38.45153 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 75}) Done))
+[2023-06-29 09:07:28.860378 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-29 09:07:33.513021 UTC] [INFO] Receive input OpenEditor New
+[2023-06-29 09:08:32.681304 UTC] [INFO] Receive input OpenEditor New
+[2023-06-29 09:09:05.765108 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-29 09:09:14.101221 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 68}) Ongoing))
+[2023-06-29 09:09:22.078859 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-29 09:09:26.244875 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 76}) Next))
+[2023-06-29 09:09:27.632553 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-29 09:09:30.754568 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-29 13:17:51.142767 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-06-29 13:17:57.069039 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 68}) Canceled))
+[2023-07-04 04:30:31.008948 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-07-04 04:30:37.086622 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 76}) Done))
+[2023-07-05 05:38:44.714734 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-07-05 05:39:09.083306 UTC] [INFO] Receive input OpenEditor New
+[2023-07-05 05:39:47.775058 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 79}) Ongoing))
+[2023-07-10 06:29:43.340134 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-07-10 06:29:50.027348 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Ongoing,Next,Todo,Done,Canceled,Waiting]) SortByStatus
+[2023-07-10 06:31:08.159822 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-08-28 09:25:47.057807 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-08-28 09:25:52.754401 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 79}) Done))
+[2023-08-28 09:26:03.037252 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 77}) Done))
+[2023-08-28 09:26:06.48045 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 78}) Done))
+[2023-08-28 09:26:08.592479 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-08-28 09:26:15.412323 UTC] [INFO] Receive input OpenEditor New
+[2023-08-28 09:26:29.22965 UTC] [INFO] Receive input OpenEditor New
+[2023-08-28 09:26:48.931074 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-08-28 09:26:53.002389 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 80}) Next))
+[2023-08-28 09:34:25.491082 UTC] [INFO] Receive input OpenEditor New
+[2023-08-28 13:11:42.745346 UTC] [INFO] Receive input OpenEditor New
+[2023-08-28 13:12:10.36988 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-08-28 13:12:19.362074 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 81}) Done))
+[2023-08-28 13:12:27.023374 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 83}) Ongoing))
+[2023-08-28 13:12:30.528861 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-08-28 14:24:35.926252 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-08-28 14:26:28.07108 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-08-28 14:26:33.286485 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 83}) Done))
+[2023-08-28 14:26:39.021459 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 80}) Ongoing))
+[2023-08-28 14:32:29.584883 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-08-30 06:02:28.362513 UTC] [INFO] Receive input UserQueryTasks (StatusIn [Todo,Next,Ongoing,Waiting]) SortByStatus
+[2023-08-30 06:02:33.937721 UTC] [INFO] Receive input UserTaskCommand (TaskCmd (UpdateStatus (TaskId {unId = 80}) Done))
