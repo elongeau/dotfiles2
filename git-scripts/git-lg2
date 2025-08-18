@@ -1,0 +1,2 @@
+#!/bin/sh
+git log --color=always --pretty=format:"%C(yellow)%h%Creset - %C(green)%an%Creset, %ar : %s"'

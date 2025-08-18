@@ -1,0 +1,1 @@
+glab mr create -a emmanuel.longeau  -f -b $(git parent) && git mrv

@@ -54,13 +54,11 @@ zle -N edit-command-line
 bindkey '^xe' edit-command-line
 bindkey '^x^e' edit-command-line
 
-source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 export PATH="/opt/homebrew/opt/kubernetes-cli@1.22/bin:/Users/emmanuellongeau/Library/Application Support/JetBrains/Toolbox/scripts:$PATH"
 export PATH="$HOME/.git-customs:$PATH"
-export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="/opt/homebrew/bin:${PATH}"
 export PATH="/Users/emmanuellongeau/Library/Application\ Support/JetBrains/Toolbox/scripts:${PATH}"
 eval "$(starship init zsh)"
@@ -68,14 +66,17 @@ eval "$(zoxide init zsh)"
 
 eval "$(direnv hook zsh)"
 
+sql() {
+    PGPASSWORD=password psql -h localhost -p 5432 -U postgres -c "$1"
+}
+
+alias sql="sql"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="/opt/homebrew/opt/libiconv/bin:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
-alias ag="autogestao"
 export BAT_THEME="Solarized (light)"
 
-[ -f "/Users/emmanuellongeau/.ghcup/env" ] && source "/Users/emmanuellongeau/.ghcup/env" # ghcup-env
 #compdef gt
 ###-begin-gt-completions-###
 #
@@ -96,3 +97,5 @@ _gt_yargs_completions()
 compdef _gt_yargs_completions gt
 ###-end-gt-completions-###
 
+
+export LC_ALL="fr_FR.UTF-8"

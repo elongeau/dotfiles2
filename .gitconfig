@@ -108,12 +108,8 @@
   ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
   resolve = "!git diff --name-only --diff-filter=U | xargs code -n"
   pushf = push --force-with-lease
-  browse = !"git config --get remote.origin.url | gsed -re 's#git@github.com:adeo/(.*).git#https://github.com/adeo/\\1/pulls#g' | xargs open"
-  build = !"git config --get remote.origin.url | gsed -re 's#git@github.com:adeo/(.*).git#https://gitlab.com/adeotech/lmfr/services-platform/\\1/pipelines#g' | xargs open"
   todos = !"git changes origin/master.. | cut -f2 | xargs rg TODO 2> /dev/null"
-	identity = "! git config user.name \"$(git config user.$1.name)\"; git config user.email \"$(git config user.$1.email)\"; git config user.signingkey \"$(git config user.$1.signingkey)\"; :"
-  prf = "!gh pr list | rg \"^\\d*\" | fzf | cut -f1 | xargs gh pr checkout"
-  prv = "!gh pr view | rg View | gsed -re 's/.*GitHub: (.*)/\\1/g' | xargs open"
+  identity = "! git config user.name \"$(git config user.$1.name)\"; git config user.email \"$(git config user.$1.email)\"; git config user.signingkey \"$(git config user.$1.signingkey)\"; :"
 [branch "master"]
   mergeoptions = --no-ff
 [pull]
@@ -134,19 +130,7 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
-[user]
-	useConfigOnly = true
-	name = Emmanuel LONGEAU
-	email = emmanuel.longeau@ext.leroymerlin.fr
 [user "github"]
 	name = Emmanuel LONGEAU
 	email = emmanuel.longeau@gmail.com
 	signingkey = 848340E786B8308
-[user "sfeir"]
-	name = Emmanuel LONGEAU
-	email = longeau.e@sfeir.com
-	signingkey = 31607150DC75B6AAC
-[user "lm"]
-	name = Emmanuel LONGEAU
-	email = emmanuel.longeau@ext.leroymerlin.fr
-	signingkey = FF6135E7E0C94558
