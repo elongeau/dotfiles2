@@ -9,7 +9,7 @@ ZSH_THEME="robbyrussell"
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
-plugins=(git docker docker-compose thefuck sbt scala kubectl zsh-autosuggestions ssh-agent)
+plugins=(git docker docker-compose thefuck fzf ssh-agent fast-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -19,8 +19,8 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
-
-source /Users/emmanuellongeau/.zsh/fast-syntax-highlighting/F-Sy-H.plugin.zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /Users/emmanuellongeau/.zsh/fast-syntax-highlighting/F-Sy-H.plugin.zsh
 eval $(thefuck --alias)
 
 alias d="docker"
@@ -39,14 +39,11 @@ alias ls='eza'
 alias ll='ls -l'
 alias la='ls -la'
 alias timeout='gtimeout'
-alias repas='bat ~/Dropbox/Zettelkasten/020\ Planning\ Repas.md'
-alias zet='FZF_DEFAULT_COMMAND="fd . ~/Dropbox/Zettelkasten"  fzf --preview "bat --style numbers,changes --color=always {}" | tr \\n \\0 | xargs -0 bat'
-alias zete='FZF_DEFAULT_COMMAND="fd . ~/Dropbox/Zettelkasten"  fzf --preview "bat --style numbers,changes --color=always {}" | tr \\n \\0 | xargs -0 nvim'
 
 # GIT heart FZF
 # -------------
 source ~/dotfiles2/fzf.sh
-source ~/.secret.sh
+# source ~/.secret.sh
 # Enable Ctrl-x-e to edit command line
 autoload -U edit-command-line
 # Emacs style
@@ -55,9 +52,6 @@ bindkey '^xe' edit-command-line
 bindkey '^x^e' edit-command-line
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-export PATH="/opt/homebrew/opt/kubernetes-cli@1.22/bin:/Users/emmanuellongeau/Library/Application Support/JetBrains/Toolbox/scripts:$PATH"
 export PATH="$HOME/.git-customs:$PATH"
 export PATH="/opt/homebrew/bin:${PATH}"
 export PATH="/Users/emmanuellongeau/Library/Application\ Support/JetBrains/Toolbox/scripts:${PATH}"
@@ -66,11 +60,6 @@ eval "$(zoxide init zsh)"
 
 eval "$(direnv hook zsh)"
 
-sql() {
-    PGPASSWORD=password psql -h localhost -p 5432 -U postgres -c "$1"
-}
-
-alias sql="sql"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="/opt/homebrew/opt/libiconv/bin:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"

@@ -1,10 +1,15 @@
 [color]
   ui = auto
-[user]
-[http]
-   ; proxy = http://gateway.zscaler.net:80
-[https]
-   ; proxy = http://gateway.zscaler.net:443
+[includeIf "gitdir:~/dotfiles2/**"]
+  path = ~/.config/git/perso.gitconfig
+[includeIf "gitdir:~/focusbox/perso/**"]
+  path = ~/.config/git/perso.gitconfig
+[includeIf "gitdir:~/focusbox/alma/**"]
+  path = ~/.config/git/alma.gitconfig
+[url "gh-work:orgname"]
+  insteadOf = git@github.com:alma
+[commit]
+    gpgsign = true
 [core]
   editor = nvim
   whitespace = trailing-space,space-before-tab
@@ -19,7 +24,7 @@
   difftool = true
   log      = true
   show     = true
-	log = gitmoji-log | less --tabs=4 -rFX
+	log = less --tabs=4 -rFX
 [diff]
   wordRegex = .
   renames = copies
@@ -68,14 +73,13 @@
   cp = cherry-pick
   co = checkout
   cl = clone
-  # ci = !gitmoji -c
   ci = commit -S
   cim = commit -S -m
   st = status -sb
   br = branch
   unstage = reset HEAD --
   dc = diff --ignore-all-space --cached
-  lg = "!f() { git log --color=always --format=tformat:'%C(red)%h %C(green)%ai%C(reset) %C(bold blue)%<(15,trunc)%an%C(reset) %<(79,trunc)%s %C(yellow)CHOMPABLENEWLINES%dENDOFBODY%C(reset)' --date=local $1 | gitmoji-log | gsed -re 's/CHOMPABLENEWLINESENDOFBODY//' | gsed -re 's/CHOMPABLENEWLINES(.*)/\\\n\\1/' | gsed -re 's/ENDOFBODY//'  | less --tabs=4 -rFX; }; f"
+  lg = "!f() { git log --color=always --format=tformat:'%C(red)%h %C(green)%ai%C(reset) %C(bold blue)%<(15,trunc)%an%C(reset) %<(79,trunc)%s %C(yellow)CHOMPABLENEWLINES%dENDOFBODY%C(reset)' --date=local $1 | gsed -re 's/CHOMPABLENEWLINESENDOFBODY//' | gsed -re 's/CHOMPABLENEWLINES(.*)/\\\n\\1/' | gsed -re 's/ENDOFBODY//'  | less --tabs=4 -rFX; }; f"
   lg5 = !git lg -5
   lgm = !git lg origin/master..
   lgd = log --graph --pretty=format:'%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n          %C(yellow)%d%Creset' --abbrev-commit
